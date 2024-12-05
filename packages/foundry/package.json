@@ -17,7 +17,11 @@
     "lint": "make lint",
     "test": "make test",
     "verify": "make build-and-verify RPC_URL=${1:-localhost}",
-    "verify-keystore": "make verify-keystore"
+    "verify-keystore": "make verify-keystore",
+    "build": "forge build",
+    "deploy:local": "forge script /Users/user/Desktop/nft_marketplace/packages/foundry/script/DeployNFTCollection.s.sol --fork-url http://127.0.0.1:8545 --broadcast",
+    "deploy:tenderly": "forge script /Users/user/Desktop/nft_marketplace/packages/foundry/script/DeployNFTCollection.s.sol --rpc-url https://virtual.optimism.rpc.tenderly.co/0f4ef84b-b6db-4298-8a70-468db7834d45 --broadcast",
+    "tenderly:push": "tenderly push --networks localhost"
   },
   "dependencies": {
     "dotenv": "~16.3.1",
