@@ -8,6 +8,8 @@
     ]
   },
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
     "account": "yarn workspace @se-2/foundry account",
     "account:generate": "yarn workspace @se-2/foundry account:generate",
     "account:import": "yarn workspace @se-2/foundry account:import",
@@ -42,5 +44,12 @@
   "packageManager": "yarn@3.2.3",
   "engines": {
     "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4",
+    "next": "^15.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wagmi": "^2.13.3"
   }
 }
