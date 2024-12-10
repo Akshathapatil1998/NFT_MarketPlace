@@ -4,7 +4,7 @@ out = 'out'
 libs = ['lib']
 script = "script"
 rpc_url = "http://127.0.0.1:8546"
-chain_id = 31337
+chain_id = 1088
 
 
 broadcast = "broadcast"
@@ -17,8 +17,6 @@ localhost = "http://127.0.0.1:8545"
 tenderly_virtual = "https://virtual.optimism.rpc.tenderly.co/0f4ef84b-b6db-4298-8a70-468db7834d45"
 
 
-
-tenderly = "https://virtual.optimism.rpc.tenderly.co/0f4ef84b-b6db-4298-8a70-468db7834d45"
 
 mainnet = "https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_API_KEY}"
 sepolia = "https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
