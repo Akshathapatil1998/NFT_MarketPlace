@@ -14,6 +14,11 @@ const nextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
+  module:exports = {
+    env: {
+      NEXT_PUBLIC_RPC_URL: process.env.NEXT_PUBLIC_RPC_URL,
+    },
+  }
 };
 
 module.exports = nextConfig;

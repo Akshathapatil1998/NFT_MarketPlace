@@ -8,8 +8,6 @@
     ]
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "account": "yarn workspace @se-2/foundry account",
     "account:generate": "yarn workspace @se-2/foundry account:generate",
     "account:import": "yarn workspace @se-2/foundry account:import",
@@ -46,10 +44,12 @@
     "node": ">=18.18.0"
   },
   "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "dotenv-cli": "^7.4.4",
     "ethers": "^6.13.4",
-    "next": "^15.0.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "wagmi": "^2.13.3"
+    "pinata-web3": "^0.5.2",
+    "react-flip-numbers": "^3.0.8"
   }
 }

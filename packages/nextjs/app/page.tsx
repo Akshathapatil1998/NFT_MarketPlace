@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
-import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { BookOpenIcon, FaceSmileIcon, PlusCircleIcon, ShoppingBagIcon, WrenchIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
 
 const Home: NextPage = () => {
@@ -11,61 +11,95 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className="flex items-center flex-col flex-grow pt-10">
-        <div className="px-5">
-          <h1 className="text-center">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
-          </h1>
-          <div className="flex justify-center items-center space-x-2 flex-col sm:flex-row">
-            <p className="my-2 font-medium">Connected Address:</p>
+      <div className="flex flex-col items-center flex-grow pt-10">
+        {/* Header Section */}
+        <header className="px-5 text-center">
+          <h1 className="text-4xl font-bold mb-4">Welcome to the NFT Collection Creator</h1>
+          <p className="text-lg text-gray-600">
+            The one-stop solution to create, showcase, and trade your NFTs with ease.
+          </p>
+          <div className="mt-4 flex justify-center items-center space-x-2">
+            <p className="font-medium">Connected Address:</p>
             <Address address={connectedAddress} />
           </div>
+        </header>
 
-          <p className="text-center text-lg">
-            Get started by editing{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/nextjs/app/page.tsx
-            </code>
-          </p>
-          <p className="text-center text-lg">
-            Edit your smart contract{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
-            </code>{" "}
-            in{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/hardhat/contracts
-            </code>
-          </p>
-        </div>
-
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
-          <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <BugAntIcon className="h-8 w-8 fill-secondary" />
-              <p>
-                Tinker with your smart contract using the{" "}
-                <Link href="/debug" passHref className="link">
-                  Debug Contracts
-                </Link>{" "}
-                tab.
-              </p>
-            </div>
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
-              <p>
-                Explore your local transactions with the{" "}
-                <Link href="/blockexplorer" passHref className="link">
-                  Block Explorer
-                </Link>{" "}
-                tab.
-              </p>
+        {/* Hero Section */}
+        <section className="w-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-16 px-8 mt-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-semibold mb-4">Empowering Your Creativity</h2>
+            <p className="text-lg">
+              Mint NFTs seamlessly, explore active auctions, and showcase your collections. The future of digital
+              ownership starts here.
+            </p>
+            <div className="mt-6">
+              <Link href="/mintCollection" passHref>
+                <button className="btn btn-primary px-6 py-3 rounded-lg text-lg">Get Started</button>
+              </Link>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="bg-base-300 w-full py-12 px-8">
+          <h3 className="text-2xl font-bold text-center mb-8">Explore Our Features</h3>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            <FeatureCard
+              icon={<PlusCircleIcon className="h-10 w-10 text-secondary" />}
+              title="Create Collections"
+              description="Design your unique NFT collections effortlessly."
+              link="/mintCollection"
+            />
+            <FeatureCard
+              icon={<BookOpenIcon className="h-10 w-10 text-secondary" />}
+              title="View Collections"
+              description="Browse and showcase your created NFT collections."
+              link="/displaycollection"
+            />
+            <FeatureCard
+              icon={<WrenchIcon className="h-10 w-10 text-secondary" />}
+              title="View Auctions"
+              description="Participate in active NFT auctions and bid on your favorites."
+              link="/viewauction"
+            />
+            <FeatureCard
+              icon={<ShoppingBagIcon className="h-10 w-10 text-secondary" />}
+              title="Purchased NFTs"
+              description="Keep track of the NFTs you’ve acquired."
+              link="/ownednfts"
+            />
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-base-100 w-full py-6 text-center">
+          <p className="text-sm text-gray-500">&copy; 2024 NFT Marketplace. All rights reserved.</p>
+        </footer>
       </div>
     </>
+  );
+};
+
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+  link,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  link: string;
+}) => {
+  return (
+    <div className="flex flex-col bg-white shadow-lg px-6 py-8 text-center items-center max-w-sm rounded-3xl">
+      <div className="mb-4">{icon}</div>
+      <h4 className="font-bold text-lg mb-2">{title}</h4>
+      <p className="text-gray-600 mb-4">{description}</p>
+      <Link href={link} className="text-primary hover:underline">
+        Learn More
+      </Link>
+    </div>
   );
 };
 
