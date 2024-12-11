@@ -1,29 +1,64 @@
-# 🏗 Scaffold-ETH 2
+# NFT-Marketplace
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+### Project Overview
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+The NFT Marketplace project aims to provide a decentralized platform for creating, viewing, and auctioning NFTs. Here are some key points:
 
-⚙️ Built using NextJS, RainbowKit, Foundry, Wagmi, Viem, and Typescript.
+- **Decentralized**: The entire marketplace operates on the blockchain, ensuring transparency and security.
+- **NFT Collection Creator**: Users can create their own NFT collections by uploading images to IPFS and minting them as NFTs.
+- **Auction System**: Users can auction their NFTs through a decentralized interface, allowing for a variety of auction types.
+- **No Backend**: All functionality is handled on-chain, reducing the need for a centralized server.
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+### Project Goals
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+- **Engineering Quality**: The project focuses on delivering a bug-free, smooth-performing application.
+- **Uniqueness**: The marketplace aims to offer unique features or user experiences not commonly found in other NFT marketplaces.
 
-## Requirements
+### Future Enhancements
 
-Before you begin, you need to install the following tools:
+- **Integration with More Blockchains**: Expand support to other EVM-compatible blockchains.
+- **Advanced Auction Types**: Implement more complex auction mechanisms like Dutch auctions or sealed-bid auctions.
+- **User Interface Improvements**: Enhance the UI/UX for better user engagement and accessibility.
 
-- [Node (>= v18.18)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+### Project Timeline
+
+- **Phase 1**: NFT Collection Creator (Completed)
+- **Phase 2**: NFT Auction System (In Progress)
+- **Phase 3**: Additional Features and Refinements (Planned)
+
+## 🚀 Live Demo
+
+[NFT Marketplace on Vercel](https://nft-market-place-nextjs.vercel.app/)
+
+## 🌟 Features
+
+- **NFT Collection Creator**: Create your own NFT collection from IPFS-hosted images
+- **Collection Viewer**: View all your created NFT collections in one place
+- **NFT Auctions**: Auction off your NFTs through a decentralized interface
+- **Decentralized Architecture**: No backend, fully on-chain functionality
+
+## 🛠 Tech Stack
+
+- **Smart Contracts**: Solidity, OpenZeppelin
+- **Development Environment**: Foundry
+- **Frontend**: NextJS, RainbowKit, Wagmi, Viem, TypeScript
+- **Blockchain**: Tenderly Testnet
+- **Deployment**: Vercel (frontend), Tenderly (smart contracts)
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js (>= v18.18)
+- Yarn (v1 or v2+)
+- Git
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/nft-marketplace.git
+   cd nft-marketplace
 
 ## Quickstart
 
@@ -66,15 +101,14 @@ Run smart contract test with `yarn foundry:test`
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
 - Edit your deployment scripts in `packages/foundry/script`
 
+## Frontend
+<img width="1458" alt="Screenshot 2024-12-10 at 8 29 26 PM" src="https://github.com/user-attachments/assets/7f70d2a1-48fa-455e-83eb-c5f9f1948452">
 
-## Documentation
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
+## 👥 Done By
 
-To know more about its features, check out our [website](https://scaffoldeth.io).
+This project was developed by:
+- Akshatha Patil
+- Sumanayana Konda
+- Ruthwik Bommenahalli Gowda
 
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
