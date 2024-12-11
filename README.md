@@ -1,4 +1,4 @@
-# NFT-Marketplace
+# NFT Marketplace
 
 ### Project Overview
 The NFT Marketplace project aims to provide a decentralized platform for creating, viewing, and auctioning NFTs. Here are some key points:
