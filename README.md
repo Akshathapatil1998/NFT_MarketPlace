@@ -101,6 +101,10 @@ Run smart contract test with `yarn foundry:test`
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
 - Edit your deployment scripts in `packages/foundry/script`
 
+## Frontend
+<img width="1458" alt="Screenshot 2024-12-10 at 8 29 26 PM" src="https://github.com/user-attachments/assets/7f70d2a1-48fa-455e-83eb-c5f9f1948452">
+
+
 ## 👥 Done By
 
 This project was developed by:
