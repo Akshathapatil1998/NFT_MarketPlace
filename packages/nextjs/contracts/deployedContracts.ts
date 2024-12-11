@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   31337: {
     NFTCollection: {
-      address: "0x01fe11d0eeb5a45107f2dbe72757068feb1ffbeb",
+      address: "0x65e46fa420dbe6226a4b1c08c27dd9527e0387e1",
       abi: [
         {
           type: "constructor",
@@ -420,6 +420,31 @@ const deployedContracts = {
         },
         {
           type: "event",
+          name: "TokenMinted",
+          inputs: [
+            {
+              name: "owner",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "tokenId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "ipfsHash",
+              type: "string",
+              indexed: false,
+              internalType: "string",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
           name: "Transfer",
           inputs: [
             {
@@ -563,7 +588,7 @@ const deployedContracts = {
       },
     },
     ContractRegistry: {
-      address: "0x9237ea43691a8033c5d6a62ea9643a3cf6dbebea",
+      address: "0xabb677043db3df035649095ec5cbbd1609565920",
       abi: [
         {
           type: "function",
@@ -715,7 +740,7 @@ const deployedContracts = {
       inheritedFunctions: {},
     },
     NFTAuction: {
-      address: "0x9f9301259be376162caa03d110b2a4d7edf93eff",
+      address: "0x6e42b983081c4ccf431cbc44dfeb441395a7d45a",
       abi: [
         {
           type: "constructor",
@@ -1670,6 +1695,31 @@ const deployedContracts = {
               type: "uint256",
               indexed: false,
               internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "TokenMinted",
+          inputs: [
+            {
+              name: "owner",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "tokenId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "ipfsHash",
+              type: "string",
+              indexed: false,
+              internalType: "string",
             },
           ],
           anonymous: false,
