@@ -101,7 +101,7 @@ Run smart contract test with `yarn foundry:test`
 - Edit your deployment scripts in `packages/foundry/script`
 
 ## Frontend
-<img width="1458" alt="Screenshot 2024-12-10 at 8 29 26 PM" src="https://github.com/user-attachments/assets/7f70d2a1-48fa-455e-83eb-c5f9f1948452">
+<img width="1467" alt="Screenshot 2024-12-10 at 10 48 51 PM" src="https://github.com/user-attachments/assets/f4466763-06b5-4a1a-b351-faeeafa2b2aa">
 
 
 ## 👥 Done By
