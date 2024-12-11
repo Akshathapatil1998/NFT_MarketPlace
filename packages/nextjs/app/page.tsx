@@ -121,4 +121,3 @@ const FeatureCard = ({
 };
 
 export default Home;
-

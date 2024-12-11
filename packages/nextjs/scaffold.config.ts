@@ -12,7 +12,7 @@ const scaffoldConfig = {
   // The networks on which your DApp is live
   targetNetworks: [
     {
-      id: 11155111,
+      id: 1088,
       name: "tenderly",
       nativeCurrency: { name: "tenderly", symbol: "ETH", decimals: 18 },
       rpcUrls: {
