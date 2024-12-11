@@ -14,9 +14,11 @@ const Home: NextPage = () => {
       <div className="flex flex-col items-center flex-grow pt-10">
         {/* Header Section */}
         <header className="px-5 text-center">
-          <h1 className="text-4xl font-bold mb-4">Welcome to the NFT Collection Creator</h1>
-          <p className="text-lg text-gray-600">
-            The one-stop solution to create, showcase, and trade your NFTs with ease.
+          <h1 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+            NFT Marketplace
+          </h1>
+          <p className="text-xl text-gray-700">
+            Create, Showcase, and Trade Your NFTs with Ease.
           </p>
           <div className="mt-4 flex justify-center items-center space-x-2">
             <p className="font-medium">Connected Address:</p>
@@ -25,49 +27,61 @@ const Home: NextPage = () => {
         </header>
 
         {/* Hero Section */}
-        <section className="w-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-16 px-8 mt-10">
+        <section className="w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white py-20 px-8 mt-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-4">Empowering Your Creativity</h2>
+            <h2 className="text-4xl font-bold mb-6">Unlock the Power of NFTs</h2>
             <p className="text-lg">
-              Mint NFTs seamlessly, explore active auctions, and showcase your collections. The future of digital
-              ownership starts here.
+              Mint, auction, and explore the world of digital ownership. Your journey into the NFT universe begins here.
             </p>
-            <div className="mt-6">
+            <div className="mt-8">
               <Link href="/mintCollection" passHref>
-                <button className="btn btn-primary px-6 py-3 rounded-lg text-lg">Get Started</button>
+                <button className="btn btn-primary px-8 py-4 rounded-full text-xl">Start Creating</button>
               </Link>
             </div>
           </div>
         </section>
 
         {/* Features Section */}
-        <section className="bg-base-300 w-full py-12 px-8">
-          <h3 className="text-2xl font-bold text-center mb-8">Explore Our Features</h3>
-          <div className="flex flex-wrap justify-center items-center gap-6">
+        <section className="bg-base-200 w-full py-16 px-8">
+          <h3 className="text-3xl font-bold text-center mb-12">Discover Our Capabilities</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard
-              icon={<PlusCircleIcon className="h-10 w-10 text-secondary" />}
+              icon={<PlusCircleIcon className="h-12 w-12 text-secondary" />}
               title="Create Collections"
               description="Design your unique NFT collections effortlessly."
               link="/mintCollection"
             />
             <FeatureCard
-              icon={<BookOpenIcon className="h-10 w-10 text-secondary" />}
+              icon={<BookOpenIcon className="h-12 w-12 text-secondary" />}
               title="View Collections"
               description="Browse and showcase your created NFT collections."
               link="/displaycollection"
             />
             <FeatureCard
-              icon={<WrenchIcon className="h-10 w-10 text-secondary" />}
+              icon={<WrenchIcon className="h-12 w-12 text-secondary" />}
               title="View Auctions"
               description="Participate in active NFT auctions and bid on your favorites."
               link="/viewauction"
             />
             <FeatureCard
-              icon={<ShoppingBagIcon className="h-10 w-10 text-secondary" />}
+              icon={<ShoppingBagIcon className="h-12 w-12 text-secondary" />}
               title="Purchased NFTs"
               description="Keep track of the NFTs you’ve acquired."
               link="/ownednfts"
             />
+          </div>
+        </section>
+
+        {/* Created By Section */}
+        <section className="bg-base-100 w-full py-12 px-8">
+          <h3 className="text-2xl font-bold text-center mb-6">Created By</h3>
+          <div className="flex flex-col items-center">
+            <p className="text-lg text-gray-700">Team Name: Cryptocurrency and Smart Contracts</p>
+            <ul className="list-disc list-inside mt-4">
+              <li>Akshatha Patil</li>
+              <li>Sumanayana Konda</li>
+              <li>Ruthwik Bommenahalli Gowda</li>
+            </ul>
           </div>
         </section>
 
@@ -92,12 +106,12 @@ const FeatureCard = ({
   link: string;
 }) => {
   return (
-    <div className="flex flex-col bg-white shadow-lg px-6 py-8 text-center items-center max-w-sm rounded-3xl">
-      <div className="mb-4">{icon}</div>
-      <h4 className="font-bold text-lg mb-2">{title}</h4>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <Link href={link} className="text-primary hover:underline">
-        Learn More
+    <div className="flex flex-col bg-white shadow-xl px-8 py-10 text-center items-center max-w-sm rounded-2xl">
+      <div className="mb-6">{icon}</div>
+      <h4 className="font-bold text-xl mb-4">{title}</h4>
+      <p className="text-gray-700 mb-6">{description}</p>
+      <Link href={link} className="text-primary hover:underline text-lg">
+        Explore
       </Link>
     </div>
   );
