@@ -107,15 +107,18 @@ const FeatureCard = ({
   link: string;
 }) => {
   return (
-    <div className="flex flex-col bg-white shadow-lg px-6 py-12 text-center items-center max-w-sm rounded-3xl transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="flex flex-col bg-white shadow-lg px-6 py-12 text-center items-center max-w-2xl rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
       <div className="mb-6">{icon}</div>
       <h4 className="font-bold text-2xl mb-4">{title}</h4>
       <p className="text-lg mb-6">{description}</p>
-      <Link href={link} className="text-black hover:underline text-xl">
-        Explore
+      <Link href={link} passHref>
+        <button className="bg-black text-white hover:bg-gray-700 px-6 py-3 rounded-lg text-lg font-bold transition duration-300 ease-in-out">
+          Explore
+        </button>
       </Link>
     </div>
   );
 };
 
 export default Home;
+
