@@ -43,28 +43,28 @@ const Home: NextPage = () => {
 
         {/* Features Section */}
         <section className="bg-base-200 w-full py-16 px-8">
-          <h3 className="text-3xl font-bold text-center mb-12">Discover Our Capabilities</h3>
+          <h3 className="text-3xl font-bold text-center mb-12 text-purple-700">Discover Our Capabilities</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard
-              icon={<PlusCircleIcon className="h-12 w-12 text-secondary" />}
+              icon={<PlusCircleIcon className="h-12 w-12 text-purple-500" />}
               title="Create Collections"
               description="Design your unique NFT collections effortlessly."
               link="/mintCollection"
             />
             <FeatureCard
-              icon={<BookOpenIcon className="h-12 w-12 text-secondary" />}
+              icon={<BookOpenIcon className="h-12 w-12 text-purple-500" />}
               title="View Collections"
               description="Browse and showcase your created NFT collections."
               link="/displaycollection"
             />
             <FeatureCard
-              icon={<WrenchIcon className="h-12 w-12 text-secondary" />}
+              icon={<WrenchIcon className="h-12 w-12 text-purple-500" />}
               title="View Auctions"
               description="Participate in active NFT auctions and bid on your favorites."
               link="/viewauction"
             />
             <FeatureCard
-              icon={<ShoppingBagIcon className="h-12 w-12 text-secondary" />}
+              icon={<ShoppingBagIcon className="h-12 w-12 text-purple-500" />}
               title="Purchased NFTs"
               description="Keep track of the NFTs you’ve acquired."
               link="/ownednfts"
@@ -74,10 +74,10 @@ const Home: NextPage = () => {
 
         {/* Created By Section */}
         <section className="bg-base-100 w-full py-12 px-8">
-          <h3 className="text-2xl font-bold text-center mb-6">Created By</h3>
+          <h3 className="text-2xl font-bold text-center mb-6 text-purple-700">Created By</h3>
           <div className="flex flex-col items-center">
             <p className="text-lg text-gray-700">Team Name: Cryptocurrency and Smart Contracts</p>
-            <ul className="list-disc list-inside mt-4">
+            <ul className="list-disc list-inside mt-4 text-purple-500">
               <li>Akshatha Patil</li>
               <li>Sumanayana Konda</li>
               <li>Ruthwik Bommenahalli Gowda</li>
@@ -108,9 +108,9 @@ const FeatureCard = ({
   return (
     <div className="flex flex-col bg-white shadow-xl px-8 py-10 text-center items-center max-w-sm rounded-2xl">
       <div className="mb-6">{icon}</div>
-      <h4 className="font-bold text-xl mb-4">{title}</h4>
+      <h4 className="font-bold text-xl mb-4 text-purple-700">{title}</h4>
       <p className="text-gray-700 mb-6">{description}</p>
-      <Link href={link} className="text-primary hover:underline text-lg">
+      <Link href={link} className="text-purple-500 hover:underline text-lg">
         Explore
       </Link>
     </div>
@@ -118,3 +118,4 @@ const FeatureCard = ({
 };
 
 export default Home;
+
