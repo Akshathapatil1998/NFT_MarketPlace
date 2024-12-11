@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white">
+      <div className="min-h-screen bg-gradient-to-br from-green-500 via-green-400 to-green-300 text-white">
         {/* Header Section */}
         <header className="py-6 px-4">
           <div className="container mx-auto flex justify-between items-center">
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             <h2 className="text-6xl font-extrabold mb-6">Enter the NFT Universe</h2>
             <p className="text-2xl mb-12">Create, Showcase, and Trade Your NFTs with Ease.</p>
             <Link href="/mintCollection" passHref>
-              <button className="bg-white text-indigo-500 hover:bg-indigo-100 px-10 py-4 rounded-full text-2xl font-bold transition duration-300 ease-in-out">
+              <button className="bg-white text-green-500 hover:bg-green-100 px-10 py-4 rounded-full text-2xl font-bold transition duration-300 ease-in-out">
                 Start Creating
               </button>
             </Link>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
         </section>
 
         {/* Created By Section */}
-        <section className="py-12 bg-white text-indigo-500">
+        <section className="py-12 bg-white text-green-500">
           <div className="container mx-auto text-center">
             <h3 className="text-3xl font-bold mb-6">Created By</h3>
             <div className="flex flex-col items-center">
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
         </section>
 
         {/* Footer */}
-        <footer className="py-6 bg-indigo-500 text-white">
+        <footer className="py-6 bg-green-500 text-white">
           <div className="container mx-auto text-center">
             <p className="text-sm">&copy; 2024 NFT Marketplace. All rights reserved.</p>
           </div>
@@ -107,7 +107,7 @@ const FeatureCard = ({
   link: string;
 }) => {
   return (
-    <div className="flex flex-col bg-indigo-600 shadow-lg px-6 py-12 text-center items-center max-w-sm rounded-3xl transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="flex flex-col bg-green-600 shadow-lg px-6 py-12 text-center items-center max-w-sm rounded-3xl transition duration-300 ease-in-out transform hover:scale-105">
       <div className="mb-6">{icon}</div>
       <h4 className="font-bold text-2xl mb-4">{title}</h4>
       <p className="text-lg mb-6">{description}</p>
