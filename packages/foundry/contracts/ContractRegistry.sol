@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+
 pragma solidity >=0.8.0 <0.9.0;
 
 contract ContractRegistry {
@@ -57,4 +57,12 @@ contract ContractRegistry {
     function getCollectionMetadata(address collection) external view returns (CollectionInfo memory) {
         return collectionMetadata[collection];
     }
+    
+    function checkOwnerCollections(address owner) public view returns (address[] memory) {
+        return ownerToCollections[owner];
+    }
+
 }
+
+
+

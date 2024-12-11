@@ -11,7 +11,7 @@ default_network = "http://127.0.0.1:8545"
 localhost = "http://127.0.0.1:8545"
 metis = "${METIS_RPC_URL}"
 
-tenderly = "https://virtual.optimism.rpc.tenderly.co/0f4ef84b-b6db-4298-8a70-468db7834d45"
+tenderly = "https://virtual.optimism.rpc.tenderly.co/85a84d3a-d03c-4e73-9bf4-2c73719c8710"
 
 mainnet = "https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_API_KEY}"
 sepolia = "https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
@@ -35,7 +35,7 @@ pgnTestnet = "https://sepolia.publicgoods.network"
 [etherscan]
 polygonMumbai = { key = "${ETHERSCAN_API_KEY}" }
 sepolia = { key = "${ETHERSCAN_API_KEY}" }
-unknown_chain = { key = "${TENDERLY_ACCESS_KEY}", chain = 14567843534, url = "https://virtual.mainnet.rpc.tenderly.co/69523180-1db0-4f2d-9e03-2d8932cc72ef" }
+unknown_chain = { key = "${TENDERLY_ACCESS_KEY}", chain = 10, url = "https://virtual.optimism.rpc.tenderly.co/f7d29a69-6eb3-420f-8d95-026f0841bdb0" }
 
 
 [fmt]

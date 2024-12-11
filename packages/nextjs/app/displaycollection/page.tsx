@@ -32,6 +32,9 @@ export default function ViewCollections() {
       return;
     }
 
+    console.log("Account:", account); // Check wallet address
+    console.log("Provider:", provider); // Check provider initialization
+
     setLoading(true);
 
     const fetchedCollections: NFTCollection[] = [];
@@ -47,8 +50,10 @@ export default function ViewCollections() {
         console.error("Failed to get registry contract.");
         return;
       }
+
       const collectionContractAddresses: string[] = await registryConract.getCollectionsByOwner(account);
       console.log(`collectionContractAddresses`, collectionContractAddresses);
+
       if (!collectionContractAddresses.length) {
         console.log("No collections found for this account.");
         return [];
