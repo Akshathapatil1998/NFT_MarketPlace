@@ -28,6 +28,7 @@ The NFT Marketplace project aims to provide a decentralized platform for creatin
 ## 🚀 Live Demo
 
 [NFT Marketplace on Vercel](https://nft-market-place-nextjs.vercel.app/)
+[Youtube Demo](https://youtu.be/tAHn5dQZw8I)
 
 ## 🌟 Features
 
